@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html, body, main {
+    padding: 0;
+    margin: 0;
+    /*
+    font-family: 'open sans'; 
+    background-color: #d8e0e5; 
+    */
+}
+
+.container {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+header {
+    background-color: rgb(46, 44, 44);
+    /*    background-image: url("https://picsum.photos/1300/700");*/
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 30rem;
+    box-shadow: 2px 2px 5px 0 black;
+}
+
+.contact ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact img {
+    height: 30px;
+    width: 30px;
+    filter: invert(65%)
+}
+
+.coordonnees img {
+    height: 30px;
+    width: 30px;
+}
+
+.mail:hover img {
+    animation: rotating 0.6s;
+}
+
+.phone:hover img {
+    animation: rotating 0.6s;
+}
+
+.git:hover img {
+    animation: rotating 0.6s;
+}
+
+.linkedin:hover img {
+    animation: rotating 0.6s;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.7);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.phone>img {
+    height: 30px;
+    width: 30px;
+}
+
+.linkedin>img {
+    height: 30px;
+    width: 30px;
+}
+
+h1 {
+    color: #337cb8;
+}
+
+/* SECTIONS */
+
+.container-body {
+    width: 90%;
+    margin: auto;
+}
+
+.about, .skills-section, .employment, .education, .contact {
+    position: relative;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.skills h4 {
+    text-align: center;
+}
+
+/* BARRE DE PROGRESSION DEBUT */
+
+.skill {
+    display: flex;
+    height: 45px;
+    margin: 20px;
+}
+
+.skill-logo {
+    width: 45px;
+    box-shadow: 0 0 20Px rgba(0, 0, 0, 0.3);
+}
+
+.logo-html {
+    background-image: url("images/html5.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-css {
+    background-image: url("images/css-3.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-js {
+    background-image: url("images/logo-js.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill-index {
+    margin: 0 0 0 10px;
+}
+
+.progress {
+    min-width: 300px;
+    width: auto;
+    margin: 0 auto 10px;
+    color: #ffffff;
+    position: relative;
+}
+
+.progress::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 8px;
+    z-index: -2;
+    background: #dcd9f1;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.progress::after {
+    content: '';
+    background: #337cb8;
+    height: 8px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.progress-bar-html::after {
+    max-width: 75%;
+}
+
+.progress-bar-css::after {
+    max-width: 40%;
+}
+
+.progress-bar-js::after {
+    max-width: 10%;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/*  FIN PROGRESS BAR  */
+
+/* TOOLS  */
+
+#tools ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo-tool {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.logo-tool:hover {
+    animation: scaling 0.6s;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo-eclipse {
+    background-image: url("images/logo-eclipse.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-vsc {
+    background-image: url("images/visualstudio.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-slack {
+    background-image: url("images/slack.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-gimp {
+    background-image: url("images/gimp.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-trello {
+    background-image: url("images/trello.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-github {
+    background-image: url("images/github.svg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* PROGRESS BAR pour les compétences en dev 
+.skills>ul>li{
+    display: flex;
+    justify-items: center;
+
+}
+
+
+
+.cptc>img {
+    height: 25px;
+    width: 25px;
+}
+
+.progress-bar {
+    /* la bar dans sa totalité soit le referentiel pour le niveau de compétence à afficher 
+    width: 250px;
+    height: 15px;
+    padding: 3px;
+    background-color: #2e2c2c;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px rgb(0, 0, 0), 0 1px 0 #2b2b2b;
+}
+
+.progress-bar::before {
+    /* il s'agit de la partie de la bar indiquant la quantité 
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 12px;
+    background-color: rgb(211, 107, 9);
+    border-radius: 16px;
+    box-shadow: 0 1px 0 #000;
+    top: 2px;
+    left: 2px;
+}
+*/
+
+/* ligne de design sous les titre des sections */
+
+h3::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    top: 31px;
+    border: 2px solid #337cb8;
+}
+
+.employment {
+    margin: 0 auto;
+}
+
+.xp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience ul {
+    margin: 0;
+    padding: 0;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.job-localisation {
+    color: #337cb8;
+    font-size: 19px;
+}
+
+.company-name {
+    text-transform: uppercase;
+}
+
+.company-description {
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition-delay: 0s;
+}
+
+.experience {
+    border-radius: 3px;
+    flex: 1 1 310px;
+    margin: 7px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.experience:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.logo-xp>img {
+    width: 90%;
+    height: 90%;
+    max-width: 190px;
+    max-height: 500px;
+}
+
+.header-experience {
+    height: 140px;
+    transition: height 0.3s, filter 0.3S;
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.experience:hover .header-experience {
+    height: 55px;
+    filter: grayscale(100%) blur(1.2px);
+}
+
+.experience-description {
+    position: relative;
+    background-color: #fff;
+    color: #666C74;
+    height: 75px;
+    overflow: hidden;
+    transition: height 0.3s;
+    border-radius: 0 0 3px 3px;
+    overflow: initial;
+    line-height: 30px;
+    padding: 15px;
+}
+
+.date {
+    position: absolute;
+    background-color: #337cb8;
+    color: #fff;
+    top: -28px;
+    left: 0px;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 22px;
+}
+
+.experience:hover .company-description {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.experience:hover .experience-description {
+    height: 460px;
+}
+
+.task li {
+    list-style-type: initial;
+    list-style-position: inside;
+    line-height: initial;
+}
+
+/* STUDIES SECTION - START */
+
+.studies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.study {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin: 25px 0;
+    padding: 15px;
+    line-height: 25px;
+    position: relative;
+    display: flex;
+    flex: 1 1 310px;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.study-date {
+    top: -22px;
+    left: 0px;
+    padding: 0 15px 0px 15px;
+    position: absolute;
+    font-weight: bold;
+    background-color: #337cb8;
+    color: #fff;
+    border-radius: 1px;
+    line-height: 22px;
+}
+
+.school-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.diploma {
+    color: #337cb8;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(46, 44, 44);
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.github-link>img {
+    width: 30px;
+    height: 30px;
+}
+
+.github-link:hover img {
+    animation: rotating 0.6s;
+}
+
+.coordonnees {
+    width: 100%;
+}
+
+.coordonnees ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.coordonnees img {
+    filter: invert(70%);
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        display: flex;
+    }
+    .profile-picture>img {
+        width: 300px;
+        height: 300px;
+    }
+    .presentation {
+        margin: auto 25px;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Tech {
+        margin-right: 50px;
+    }
+    .tools {
+        margin-left: 50px;
+    }
+    .study {
+        margin: 25px 15px;
+    }
+}
