@@ -486,6 +486,42 @@ h3::before {
     color: #337cb8;
 }
 
+
+/* BOUTON DOWNLOAD CV  */
+
+.downloadCv {
+    margin: 20px auto; 
+    display: block;
+    background-color: #337cb8;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+
+.btnCv {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.downloadCv:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    transform: scale(1.1);
+
+}
+
+
+
 /* FOOTER */
 
 footer {
