@@ -132,7 +132,14 @@ header {
     font-size: 1.6em;
     text-decoration: none;
     color: #337cb8;
+}
 
+.menu li img{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    /* fill: #337cb8; */
+    filter: invert(70%) brightness(0.5) sepia(5) hue-rotate(163deg) saturate(3);
 }
 
 h1 {
