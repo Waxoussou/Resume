@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
     <title>My Resume</title>
 </head>
 
@@ -17,7 +16,8 @@
             <div class="container">
 
                 <div class="header-header">
-                    <div class="profile-picture"> <img src="https://picsum.photos/200/300/?random" alt="ma photo de profil">
+                    <div class="profile-picture"> <img src="https://picsum.photos/200/300/?random"
+                            alt="ma photo de profil">
                     </div>
 
                     <div class="contact">
@@ -47,9 +47,19 @@
                 </div> -->
             </div>
         </header>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#background">Bio</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#employment">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Download</a></li>
+            </ul>
+        </nav>
         <div class="container-body">
 
-            <section class="background">
+
+            <section class="background" id="background">
                 <div class="about">
                     <h3>About me</h3>
                     <p>
@@ -64,7 +74,7 @@
                 </div>
             </section>
 
-            <section class="skills-section">
+            <section class="skills-section" id="skills">
 
                 <h3>Compétences</h3>
 
@@ -155,7 +165,7 @@
 
             </section>
 
-            <div class="resume">
+            <div class="resume" id="employment">
                 <div class="employment">
                     <h3>Mon parcours professionnel</h3>
 
@@ -309,7 +319,7 @@
                     </div>
                 </div>
 
-                <div class="education">
+                <div class="education" id="education">
                     <h3>Formation</h3>
                     <div class="studies-container">
 
@@ -318,7 +328,8 @@
                             <span class="study-date">2018</span>
                             <span class="school-name">ADRAR</span>
                             <span class="diploma">Licence</span>
-                            <span class="school-description">Concepteur Développeur Applications Numériques Web Mobiles</span>
+                            <span class="school-description">Concepteur Développeur Applications Numériques Web
+                                Mobiles</span>
                             <div class="shcool-localisation"><span class="city">Toulouse</span>, <span class="country">
                                     France</span> </div>
 
@@ -366,7 +377,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h3>Get in touch</h3>
                 <div class="btnCv">
                     <a class="downloadCv" href="MaxWebCv.pdf" download>DOWNLOAD MY RESUME</a>
@@ -403,6 +414,25 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        const positionElementInPage = $('#menu').offset().top;
+        $(window).resize(function () {
+            positionElementInPage = $('#menu').offset().top;
+        });
+        $(window).scroll(
+            function () {
+                if ($(window).scrollTop() > positionElementInPage) {
+                    // fixed
+                    $('#menu').addClass("fixedTop");
+                } else {
+                    // unfixed
+                    $('#menu').removeClass("fixedTop");
+                }
+            }
+
+        );
+    </script>
 </body>
 
 </html>

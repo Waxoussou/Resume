@@ -6,6 +6,7 @@
 html, body, main {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     /*
     font-family: 'open sans'; 
     background-color: #d8e0e5; 
@@ -15,6 +16,7 @@ html, body, main {
 .container {
     text-align: center;
     margin: 25px 0px;
+
 }
 
 header {
@@ -88,6 +90,51 @@ header {
     width: 30px;
 }
 
+/* ///MENU//// */
+
+.fixedTop{
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.menu li {
+    color: #337cb8;
+    width: auto;
+    flex-wrap: nowrap;
+    height: 45px;
+    border: none;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 7px ;    
+    transition: transform 1s ease;
+}
+
+.menu li:hover {
+    transform: scale(0.9); 
+}
+
+.menu li a{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #337cb8;
+
+}
+
 h1 {
     color: #337cb8;
 }
@@ -97,10 +144,12 @@ h1 {
 .container-body {
     width: 90%;
     margin: auto;
+
 }
 
 .about, .skills-section, .employment, .education, .contact {
     position: relative;
+
 }
 
 h3 {
