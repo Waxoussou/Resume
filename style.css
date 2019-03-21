@@ -48,6 +48,50 @@ header {
   filter: invert(65%);
 }
 
+header .mail::after {
+    content: "maxime.abehserra@gmail.com";
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    text-decoration: none;
+    border: none;
+    color: #666c74;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s 0.3s ease-out;
+    z-index: 1;
+  }
+  
+  header .mail::before{
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 11%;
+      background-color: rgba(245, 245, 245, 0);
+      border: solid;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.7s 0.3s ease-out;
+      border-width: 0 4px 7px 4px;
+      border-color: transparent transparent rgb(250, 250, 250) transparent;
+      z-index: 0;
+  }
+  
+  header .mail:hover::before{
+      visibility: visible;
+      bottom: -12px;
+      opacity: 1;
+  }
+  
+  header .mail:hover::after {
+    visibility: visible;
+    bottom: -40px;
+    opacity: 1;
+  }
+
 .coordonnees img {
   height: 30px;
   width: 30px;
