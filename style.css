@@ -144,6 +144,18 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
 }
+.logo-node {
+    background-image: url("images/nodejs.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo-php {
+    background-image: url("images/php.svg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .skill-index {
     margin: 0 0 0 10px;
@@ -185,15 +197,21 @@ h3 {
 }
 
 .progress-bar-html::after {
-    max-width: 75%;
+    max-width: 90%;
 }
 
 .progress-bar-css::after {
-    max-width: 40%;
+    max-width: 80%;
 }
 
 .progress-bar-js::after {
-    max-width: 10%;
+    max-width: 55%;
+}
+.progress-bar-node::after {
+    max-width: 45%;
+}
+.progress-bar-php::after {
+    max-width: 20%;
 }
 
 @keyframes animate {
