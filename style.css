@@ -3,13 +3,11 @@
   list-style-type: none;
 }
 
-main li{
+main li {
   list-style-type: none;
 }
 
-html,
-body,
-main {
+html, body, main {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -53,48 +51,48 @@ header {
 }
 
 header .mail::after {
-    content: "maxime.abehserra@gmail.com";
-    position: absolute;
-    bottom: -20px;
-    left: 5%;
-    text-decoration: none;
-    border: none;
-    color: #666c74;
-    border-radius: 3px;
-    background-color: #fff;
-    padding: 5px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.7s 0.3s ease-out;
-    z-index: 1;
-  }
-  
-  header .mail::before{
-      content: '';
-      position: absolute;
-      bottom: 8px;
-      left: 11%;
-      background-color: rgba(245, 245, 245, 0);
-      border: solid;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.7s 0.3s ease-out;
-      border-width: 0 4px 7px 4px;
-      border-color: transparent transparent rgb(250, 250, 250) transparent;
-      z-index: 0;
-  }
-  
-  header .mail:hover::before{
-      visibility: visible;
-      bottom: -12px;
-      opacity: 1;
-  }
-  
-  header .mail:hover::after {
-    visibility: visible;
-    bottom: -40px;
-    opacity: 1;
-  }
+  content: "maxime.abehserra@gmail.com";
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+  text-decoration: none;
+  border: none;
+  color: #666c74;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s 0.3s ease-out;
+  z-index: 1;
+}
+
+header .mail::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 11%;
+  background-color: rgba(245, 245, 245, 0);
+  border: solid;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s 0.3s ease-out;
+  border-width: 0 4px 7px 4px;
+  border-color: transparent transparent rgb(250, 250, 250) transparent;
+  z-index: 0;
+}
+
+header .mail:hover::before {
+  visibility: visible;
+  bottom: -12px;
+  opacity: 1;
+}
+
+header .mail:hover::after {
+  visibility: visible;
+  bottom: -40px;
+  opacity: 1;
+}
 
 .coordonnees img {
   height: 30px;
@@ -122,25 +120,25 @@ header .phone::after {
   z-index: 1;
 }
 
-header .phone::before{
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 36%;
-    background-color: rgba(245, 245, 245, 0);
-    border: solid;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.7s 0.3s ease-out;
-    border-width: 0 4px 7px 4px;
-    border-color: transparent transparent rgb(250, 250, 250) transparent;
-    z-index: 0;
+header .phone::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 36%;
+  background-color: rgba(245, 245, 245, 0);
+  border: solid;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s 0.3s ease-out;
+  border-width: 0 4px 7px 4px;
+  border-color: transparent transparent rgb(250, 250, 250) transparent;
+  z-index: 0;
 }
 
-header .phone:hover::before{
-    visibility: visible;
-    bottom: -12px;
-    opacity: 1;
+header .phone:hover::before {
+  visibility: visible;
+  bottom: -12px;
+  opacity: 1;
 }
 
 header .phone:hover::after {
@@ -173,13 +171,13 @@ header .phone:hover::after {
   }
 }
 
-.phone > img {
+.phone>img {
   height: 30px;
   width: 30px;
   position: relative;
 }
 
-.linkedin > img {
+.linkedin>img {
   height: 30px;
   width: 30px;
 }
@@ -246,11 +244,7 @@ h1 {
   margin: auto;
 }
 
-.about,
-.skills-section,
-.employment,
-.education,
-.contact {
+.about, .skills-section, .employment, .education, .contact {
   position: relative;
 }
 
@@ -295,12 +289,14 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .logo-php {
   background-image: url("images/php.svg");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .logo-node {
   background-image: url("images/nodejs.png");
   background-size: 100%;
@@ -358,9 +354,11 @@ h3 {
 .progress-bar-js::after {
   max-width: 55%;
 }
+
 .progress-bar-php::after {
   max-width: 20%;
 }
+
 .progress-bar-node::after {
   max-width: 45%;
 }
@@ -445,11 +443,16 @@ h3 {
   background-position: center;
 }
 
-.logo-github {
-  background-image: url("images/github.svg");
+.logo-git {
+  /* filter: url("images/git-alt-brands.svg"); */
+  background-image: url("images/git-alt-brands.svg");
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;
+  /* filter: invert(1); */
+  /* color: #ff0055; */
+  /* background-color: #F0502F; */
+  /* border-inline-color: #ff0055; */
 }
 
 /* PROGRESS BAR pour les compétences en dev 
@@ -552,7 +555,7 @@ h3::before {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
-.logo-xp > img {
+.logo-xp>img {
   width: 90%;
   height: 90%;
   max-width: 190px;
@@ -655,6 +658,19 @@ h3::before {
   color: #337cb8;
 }
 
+/* .inProgress{
+  position: relative;
+}
+
+.inProgress ::before{
+  content: "en-cours";  
+  width: 120px;
+  height: 100px;
+  background-color: crimson;
+  font-weight: 30px;
+  position: absolute;
+} */
+
 /* BOUTON DOWNLOAD CV  */
 
 .downloadCv {
@@ -696,7 +712,7 @@ footer {
   display: flex;
 }
 
-.github-link > img {
+.github-link>img {
   width: 30px;
   height: 30px;
 }
@@ -730,7 +746,7 @@ footer {
   .container {
     display: flex;
   }
-  .profile-picture > img {
+  .profile-picture>img {
     width: 300px;
     height: 300px;
   }
