@@ -445,7 +445,7 @@ h3 {
 
 .logo-git {
   /* filter: url("images/git-alt-brands.svg"); */
-  background-image: url("images/git-alt-brands.svg");
+  background-image: url("images/github.svg");
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;
@@ -453,6 +453,20 @@ h3 {
   /* color: #ff0055; */
   /* background-color: #F0502F; */
   /* border-inline-color: #ff0055; */
+}
+
+.logo-mongo {
+  background-image: url("images/mongo.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-mysql {
+  background-image: url("images/Mysql-dolphin-square.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* PROGRESS BAR pour les compétences en dev 
