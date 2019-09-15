@@ -248,6 +248,12 @@ h1 {
   position: relative;
 }
 
+.about p {
+  font-size: 1.3em;
+  /* width: 60%; */
+  text-align: justify;
+}
+
 h3 {
   font-size: 2em;
 }
