@@ -450,6 +450,18 @@
             </div>
         </footer>
     </main>
+    <script>
+        let menu = document.querySelector('.menu');
+        let position = menu.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > position) {
+                menu.classList.add('fixedTop');
+            }
+            else {
+                menu.classList.remove('fixedTop');
+            }
+        })
+    </script>
 </body>
 
 </html>
